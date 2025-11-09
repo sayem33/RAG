@@ -1,0 +1,139 @@
+================================================================================
+APUOPE-RE TEST RESULTS - STATISTICS REPORT
+================================================================================
+Generated: 2025-11-07 09:57:01
+
+📊 OVERALL SUMMARY
+────────────────────────────────────────────────────────────────────────────────
+Total Tests:          90
+✅ Succeeded:         90 (100.0%)
+❌ Failed:            0 (0.0%)
+
+⏱️  LATENCY STATISTICS
+────────────────────────────────────────────────────────────────────────────────
+Total Time:           892.63 seconds
+Average:              9.92 seconds/test
+Min:                  1.82s
+Median (p50):         6.14s
+95th percentile:      22.93s
+99th percentile:      30.09s
+Max:                  30.09s
+
+📋 STATISTICS BY TASK TYPE
+────────────────────────────────────────────────────────────────────────────────
+
+QA_APPLICATION
+  Total Tests:        10
+  Success Rate:       10/10 (100.0%)
+  Failed:             0
+  Avg Latency:        4.04s
+  Latency Range:      2.51s - 6.14s
+  Median Latency:     3.89s
+  LLM Score (avg):    8.70/10
+  LLM Score Range:    8.0 - 9.8
+  Word F1 (avg):      0.085
+
+QA_CONCEPTUAL
+  Total Tests:        20
+  Success Rate:       20/20 (100.0%)
+  Failed:             0
+  Avg Latency:        4.85s
+  Latency Range:      2.85s - 10.05s
+  Median Latency:     4.29s
+  LLM Score (avg):    9.11/10
+  LLM Score Range:    7.0 - 9.8
+  Word F1 (avg):      0.092
+
+QUIZ_GENERATION
+  Total Tests:        40
+  Success Rate:       40/40 (100.0%)
+  Failed:             0
+  Avg Latency:        16.85s
+  Latency Range:      8.14s - 30.09s
+  Median Latency:     15.73s
+  LLM Score (avg):    4.88/10
+  LLM Score Range:    0.0 - 6.5
+  Word F1 (avg):      0.090
+
+SUMMARIZATION
+  Total Tests:        20
+  Success Rate:       20/20 (100.0%)
+  Failed:             0
+  Avg Latency:        4.07s
+  Latency Range:      1.82s - 6.81s
+  Median Latency:     4.16s
+  LLM Score (avg):    6.96/10
+  LLM Score Range:    3.8 - 8.8
+  Word F1 (avg):      0.088
+
+📄 STATISTICS BY MATERIAL/SLIDE
+────────────────────────────────────────────────────────────────────────────────
+
+slide_01
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        11.76s
+
+slide_02
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        9.90s
+
+slide_03
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        9.88s
+
+slide_04
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        8.91s
+
+slide_05
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        10.92s
+
+slide_06
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        9.24s
+
+slide_07
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        10.28s
+
+slide_08
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        8.59s
+
+slide_09
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        11.13s
+
+slide_10
+  Tests:              9
+  Success:            9/9 (100.0%)
+  Failed:             0
+  Avg Latency:        8.58s
+
+📊 TASK TYPE DISTRIBUTION
+────────────────────────────────────────────────────────────────────────────────
+quiz_generation      [ 40] ██████████████████████ 44.4%
+summarization        [ 20] ███████████ 22.2%
+qa_conceptual        [ 20] ███████████ 22.2%
+qa_application       [ 10] █████ 11.1%
+
+================================================================================

@@ -1,0 +1,4540 @@
+[
+  {
+    "material_id": "slide_01",
+    "title": "Introduction to Requirements Engineering",
+    "content": "Intro to RE: five activities (elicitation, analysis & negotiation, specification, validation, management); art vs. science; research venues; early clarity reduces rework.",
+    "test_cases": [
+      {
+        "test_id": "slide_01_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "Requirements Engineering blends human factors and structure across five activities: elicitation, analysis & negotiation, specification, validation, and management. It is ‘more art than science’ because communication and culture shape outcomes, while standards and templates add rigor. Research venues (IEEE RE, REFSQ, REJ, IEEE Software) inform best practices. Early clarity reduces rework.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_01_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "RE reduces late change by clarifying needs early. Elicitation surfaces needs; analysis & negotiation reconcile conflicts; specification records decisions in testable form; validation checks quality and agreement; management governs change, status, and versions. The art side involves communication and context; the science side uses standards and measurable criteria. Research venues (IEEE RE Conference, REFSQ, Requirements Engineering Journal, IEEE Software) guide evidence-based practice.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_01_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "RE activities",
+            "purpose of RE"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Which RE activity discovers stakeholder needs?",
+              "options": [
+                "Validation",
+                "Elicitation",
+                "Management",
+                "Deployment"
+              ],
+              "correct_answer": "B",
+              "explanation": "Elicitation surfaces needs and assumptions."
+            },
+            {
+              "question": "A primary benefit of RE is:",
+              "options": [
+                "Eliminate testing",
+                "Reduce rework via early clarity",
+                "Free hosting",
+                "Faster compilers"
+              ],
+              "correct_answer": "B",
+              "explanation": "Early clarity avoids costly late changes."
+            },
+            {
+              "question": "Which activity controls change and status?",
+              "options": [
+                "Specification",
+                "Validation",
+                "Management",
+                "Operations"
+              ],
+              "correct_answer": "C",
+              "explanation": "Management tracks versions, status, and changes."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_01_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "art vs. science",
+            "research venues"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "RE is ‘more art than science’ because it relies on:",
+              "options": [
+                "Compilers",
+                "Communication and negotiation",
+                "Sorting algorithms",
+                "CDNs"
+              ],
+              "correct_answer": "B",
+              "explanation": "Human factors dominate outcomes."
+            },
+            {
+              "question": "Which is an RE venue?",
+              "options": [
+                "ICLR",
+                "IEEE RE Conference",
+                "SIGGRAPH",
+                "NeurIPS"
+              ],
+              "correct_answer": "B",
+              "explanation": "The IEEE RE Conference focuses on RE research."
+            },
+            {
+              "question": "Which outlet publishes RE practice articles?",
+              "options": [
+                "IEEE Software",
+                "Nature Medicine",
+                "VLDB",
+                "EuroCrypt"
+              ],
+              "correct_answer": "A",
+              "explanation": "IEEE Software covers software engineering practice."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_01_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "activity outcomes/artifacts"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Which outcome signals successful validation?",
+              "options": [
+                "All user stories implemented",
+                "Requirements reviewed and defects resolved",
+                "Deployed to production",
+                "Flat burndown"
+              ],
+              "correct_answer": "B",
+              "explanation": "Validation checks quality and agreement."
+            },
+            {
+              "question": "Specification primarily produces:",
+              "options": [
+                "Unit test suite",
+                "SRS/structured requirements",
+                "Container image",
+                "Ops runbook"
+              ],
+              "correct_answer": "B",
+              "explanation": "Specification documents decisions as requirements."
+            },
+            {
+              "question": "A conflict between two stakeholder goals belongs to:",
+              "options": [
+                "Elicitation",
+                "Validation",
+                "Analysis & negotiation",
+                "Management"
+              ],
+              "correct_answer": "C",
+              "explanation": "Negotiation resolves conflicts and feasibility."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_01_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "balancing art and science"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Adding a stakeholder workshop emphasizes the:",
+              "options": [
+                "Science side",
+                "Art side",
+                "DevOps",
+                "Finance"
+              ],
+              "correct_answer": "B",
+              "explanation": "Workshops center on human alignment."
+            },
+            {
+              "question": "Adopting a standard SRS template strengthens the:",
+              "options": [
+                "Art side",
+                "Science side",
+                "Dev side",
+                "Ops side"
+              ],
+              "correct_answer": "B",
+              "explanation": "Templates provide structure and consistency."
+            },
+            {
+              "question": "Best balance of art and science is:",
+              "options": [
+                "Only formal specs",
+                "Workshops + SRS templates",
+                "No documentation",
+                "Hallway chats only"
+              ],
+              "correct_answer": "B",
+              "explanation": "Combine human collaboration with structure."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_01_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "In 5–7 sentences, explain how each of the five RE activities reduces a different type of project risk.",
+        "reference_answer": "Elicitation reduces omission risk; analysis & negotiation reduce conflict/feasibility risks; specification reduces ambiguity risk; validation reduces quality/agreement risks; management reduces change/traceability risk.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_01_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "Why does the slide argue RE is ‘more art than science’, and what are two limits of relying only on the ‘science’ side?",
+        "reference_answer": "Art reflects communication and culture. Exclusive reliance on templates can hide poor understanding and unresolved conflicts; documents alone don’t create agreement.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_01_application",
+        "task_type": "qa_application",
+        "instruction": "A team experienced late scope churn. Propose two concrete steps, grounded in slide concepts, to reduce rework next sprint.",
+        "reference_answer": "Hold a structured elicitation workshop; run a checklist-based validation review to confirm acceptance criteria before commitment.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "material_id": "slide_02",
+    "title": "Requirements & Elements of Value",
+    "content": "Requirements per Zave (services, constraints, background); Elements of Value (functional, emotional, life-changing, social impact); Pohl’s dimensions (specification, representation, agreement).",
+    "test_cases": [
+      {
+        "test_id": "slide_02_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "Zave: requirements include services, constraints, and background. The Elements of Value: functional, emotional, life-changing, social impact—higher layers depend on lower ones. Pohl’s dimensions (specification, representation, agreement) help capture value and align stakeholders.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_02_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "Requirements per Zave cover services, constraints, and necessary background. Map features to value layers; prioritize functional reliability before emotional/social features because of pyramid dependency. Pohl’s dimensions operationalize this: specification gauges understanding; representation controls formality; agreement manages consensus. Together they reduce misunderstanding and support trade-offs.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_02_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "Zave’s definition",
+            "value layers"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Which is included in Zave’s definition?",
+              "options": [
+                "UI palette",
+                "Background information for development",
+                "Team roster",
+                "Container base image"
+              ],
+              "correct_answer": "B",
+              "explanation": "Zave includes services, constraints, and background info."
+            },
+            {
+              "question": "Which layer targets time-saving?",
+              "options": [
+                "Functional",
+                "Emotional",
+                "Life-changing",
+                "Social impact"
+              ],
+              "correct_answer": "A",
+              "explanation": "Functional value emphasizes utility/efficiency."
+            },
+            {
+              "question": "Lowering emissions aligns with:",
+              "options": [
+                "Functional",
+                "Emotional",
+                "Life-changing",
+                "Social impact"
+              ],
+              "correct_answer": "D",
+              "explanation": "This addresses societal outcomes."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_02_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "pyramid dependency",
+            "examples per layer"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "The value pyramid implies teams should:",
+              "options": [
+                "Pick highest first",
+                "Satisfy lower layers before higher ones",
+                "Ignore emotions",
+                "Always choose cheapest feature"
+              ],
+              "correct_answer": "B",
+              "explanation": "Higher layers depend on lower ones."
+            },
+            {
+              "question": "A mood playlist mainly delivers:",
+              "options": [
+                "Functional",
+                "Emotional",
+                "Life-changing",
+                "Social impact"
+              ],
+              "correct_answer": "B",
+              "explanation": "It targets emotional experience."
+            },
+            {
+              "question": "A community-impact badge mainly delivers:",
+              "options": [
+                "Functional",
+                "Emotional",
+                "Life-changing",
+                "Social impact"
+              ],
+              "correct_answer": "D",
+              "explanation": "It conveys societal contribution."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_02_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "prioritization via value"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Choosing ‘instant unlock’ over a CO₂ dashboard first reflects:",
+              "options": [
+                "Random preference",
+                "Functional-first sequencing",
+                "Only cost cutting",
+                "Branding"
+              ],
+              "correct_answer": "B",
+              "explanation": "Functional reliability precedes social features."
+            },
+            {
+              "question": "A relaxation mode during checkout primarily targets:",
+              "options": [
+                "Functional",
+                "Emotional",
+                "Life-changing",
+                "Social impact"
+              ],
+              "correct_answer": "B",
+              "explanation": "It reduces anxiety—an emotional benefit."
+            },
+            {
+              "question": "Before shipping social features, teams should ensure:",
+              "options": [
+                "Perfect ads",
+                "Core reliability/usability",
+                "New logo",
+                "Snacks"
+              ],
+              "correct_answer": "B",
+              "explanation": "Higher layers rest on functional stability."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_02_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "Pohl’s dimensions"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Moving user stories to an SLA table mainly changes:",
+              "options": [
+                "Specification",
+                "Representation",
+                "Agreement",
+                "Testing"
+              ],
+              "correct_answer": "B",
+              "explanation": "It alters the form of expression."
+            },
+            {
+              "question": "Stakeholder sign-off primarily concerns:",
+              "options": [
+                "Specification",
+                "Representation",
+                "Agreement",
+                "None"
+              ],
+              "correct_answer": "C",
+              "explanation": "It secures consensus."
+            },
+            {
+              "question": "Confidence after new user research mainly improves:",
+              "options": [
+                "Specification",
+                "Representation",
+                "Budget",
+                "Deployment"
+              ],
+              "correct_answer": "A",
+              "explanation": "Understanding increased."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_02_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "Explain how the Elements of Value guide sequencing of features in a streaming app (5–7 sentences).",
+        "reference_answer": "Prioritize functional reliability (playback/search) before emotional features (mood playlists). After core utility is stable, add life-changing or social features (community sharing). This prevents investing in advanced layers when basics fail and improves adoption.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_02_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "Differentiate Pohl’s specification and representation with one requirement that evolves across both (5–7 sentences).",
+        "reference_answer": "Specification concerns understanding—e.g., faster search→p95 < 200 ms. Representation concerns expression—user story→SLA table. Understanding can increase while representation remains informal and later becomes formal.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_02_application",
+        "task_type": "qa_application",
+        "instruction": "A city must pick (A) instant unlock or (B) CO₂ dashboard for MVP. Recommend an order using the value model in ≤5 sentences.",
+        "reference_answer": "Ship instant unlock first to reduce friction; validate reliability; then add CO₂ dashboard for social impact once daily use is established.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "material_id": "slide_03",
+    "title": "Vision, Scope, and Stakeholders",
+    "content": "Vision (why/for whom), scope (what/resources/time), stakeholders (interests/influence); roadmaps; context diagrams; profiles for negotiation readiness.",
+    "test_cases": [
+      {
+        "test_id": "slide_03_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "Vision states why/for whom; scope constrains what/resources/time; features map to value; stakeholder analysis captures interests and influence; context diagrams and profiles support negotiation readiness.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_03_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "Vision aligns purpose, users, benefits, and differentiation. Scope operationalizes boundaries on functionality, resources, and time via roadmaps. Features express value and feed the backlog. Stakeholder analysis (checklists, analogs, context diagrams) surfaces who is affected, power/interest, and concerns; profiles drive engagement and prevent conflicts.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_03_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "vision vs scope",
+            "features"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Vision primarily communicates:",
+              "options": [
+                "How to code",
+                "Strategic intent and for whom",
+                "Deployment plan",
+                "UI palette"
+              ],
+              "correct_answer": "B",
+              "explanation": "Vision covers why/for whom and differentiation."
+            },
+            {
+              "question": "Scope typically includes:",
+              "options": [
+                "Fonts",
+                "Functionality, resources, schedule",
+                "Stock price",
+                "IDE"
+              ],
+              "correct_answer": "B",
+              "explanation": "Scope frames what/resources/time."
+            },
+            {
+              "question": "Features in agile often become:",
+              "options": [
+                "Dockerfiles",
+                "PBIs (epics/stories)",
+                "Invoices",
+                "Wireframes only"
+              ],
+              "correct_answer": "B",
+              "explanation": "Features map to backlog items."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_03_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "stakeholder analysis",
+            "context diagram"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Stakeholder analysis helps to:",
+              "options": [
+                "Avoid users",
+                "Assess interests/influence",
+                "Pick fonts",
+                "Tune kernels"
+              ],
+              "correct_answer": "B",
+              "explanation": "It identifies interests and power."
+            },
+            {
+              "question": "A context diagram shows:",
+              "options": [
+                "Class internals",
+                "System boundary and external interfaces",
+                "Burndown chart",
+                "CI jobs"
+              ],
+              "correct_answer": "B",
+              "explanation": "It frames external actors/interfaces."
+            },
+            {
+              "question": "A stakeholder profile should capture:",
+              "options": [
+                "Favorite color",
+                "Attitudes and value sought",
+                "Compiler flags",
+                "None"
+              ],
+              "correct_answer": "B",
+              "explanation": "Profiles inform engagement."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_03_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "vision/scope distinctions"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Best distinction is:",
+              "options": [
+                "Vision=budget; Scope=UI",
+                "Vision=why/for whom; Scope=what/resources/time",
+                "Both same",
+                "Vision=test plan"
+              ],
+              "correct_answer": "B",
+              "explanation": "Vision is intent; scope is operational boundaries."
+            },
+            {
+              "question": "A roadmap is:",
+              "options": [
+                "Fixed contract",
+                "Time-phased plan of intent",
+                "Build log",
+                "Test matrix"
+              ],
+              "correct_answer": "B",
+              "explanation": "Themes/releases plan of intent."
+            },
+            {
+              "question": "Hidden stakeholders can be found via:",
+              "options": [
+                "Only sponsor chat",
+                "Checklist + analogs + context analysis",
+                "Ignore ops",
+                "Skip discovery"
+              ],
+              "correct_answer": "B",
+              "explanation": "Use structured discovery."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_03_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "stakeholder prep for negotiation"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Profiles enable negotiation by:",
+              "options": [
+                "Eliminating constraints",
+                "Exposing interests and trade-offs",
+                "Replacing contracts",
+                "Avoiding meetings"
+              ],
+              "correct_answer": "B",
+              "explanation": "They inform trade-offs."
+            },
+            {
+              "question": "Which artefact preps for scope talks?",
+              "options": [
+                "Class diagram",
+                "Context diagram",
+                "Pixel grid",
+                "Cron"
+              ],
+              "correct_answer": "B",
+              "explanation": "Shows boundary/interfaces."
+            },
+            {
+              "question": "Conflicts can be prevented by:",
+              "options": [
+                "Ignoring influence",
+                "Early communication plans",
+                "Late surprises",
+                "Silence"
+              ],
+              "correct_answer": "B",
+              "explanation": "Plan engagement early."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_03_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "Explain (5–7 sentences) why poor scope definition derails releases even with a strong vision.",
+        "reference_answer": "Scope operationalizes vision; weak scope misses constraints and capacity, causing overload, delays, and rework. Roadmaps and capacity guardrails prevent overpromising.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_03_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "List two checklist questions to surface hidden stakeholders (5–7 sentences).",
+        "reference_answer": "Ask who approves deployment and who supports operations; validate via context diagram to reveal regulators and support teams.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_03_application",
+        "task_type": "qa_application",
+        "instruction": "Kitchen vs. patrons conflict in a cafeteria app: outline a stakeholder analysis step to prepare for negotiation (≤5 sentences).",
+        "reference_answer": "Map interests and influence; draft profiles; create a context diagram to anchor discussion.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "material_id": "slide_04",
+    "title": "Types of Requirements (FR, NFR, Business Rules)",
+    "content": "Types: functional requirements; NFRs (quality, interfaces, constraints); ISO/IEC 25010; business rules (facts, constraints, triggers, inferences, computations).",
+    "test_cases": [
+      {
+        "test_id": "slide_04_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "FRs define behaviors; NFRs constrain qualities and interfaces; ISO/IEC 25010 models quality; business rules (facts, constraints, triggers, inferences, computations) source requirements.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_04_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "FRs are observable behaviors. NFRs cover quality attributes and interfaces; they must be measurable. ISO/IEC 25010 structures quality. Business rules, often in policies or legacy systems, constrain and inform requirements.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_04_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "quality models",
+            "NFR examples"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Which standard models software quality?",
+              "options": [
+                "ISO/IEC 25010",
+                "ISO 9001",
+                "IEEE 754",
+                "RFC 2616"
+              ],
+              "correct_answer": "A",
+              "explanation": "25010 defines quality characteristics."
+            },
+            {
+              "question": "'99.9% uptime' is a:",
+              "options": [
+                "FR",
+                "Usability heuristic",
+                "Availability NFR",
+                "Business rule"
+              ],
+              "correct_answer": "C",
+              "explanation": "It quantifies availability."
+            },
+            {
+              "question": "'AES-128 for PII' is a:",
+              "options": [
+                "Constraint/security NFR",
+                "FR",
+                "Fact",
+                "UI rule"
+              ],
+              "correct_answer": "A",
+              "explanation": "Security constraint on design."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_04_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "business rules",
+            "interfaces"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Business rules often come from:",
+              "options": [
+                "Legacy systems and policies",
+                "Only UI mocks",
+                "Only code",
+                "Nowhere"
+              ],
+              "correct_answer": "A",
+              "explanation": "They are embedded in org artefacts."
+            },
+            {
+              "question": "External interface requirements describe:",
+              "options": [
+                "Internal refactoring",
+                "Connections to other systems/devices",
+                "Brand palette",
+                "HR policy"
+              ],
+              "correct_answer": "B",
+              "explanation": "They define system boundaries."
+            },
+            {
+              "question": "Inference rules do:",
+              "options": [
+                "Define facts",
+                "Create new knowledge from conditions",
+                "Set colors",
+                "Schedule sprints"
+              ],
+              "correct_answer": "B",
+              "explanation": "They derive facts."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_04_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "testable NFRs",
+            "trade-offs"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Best way to improve NFR testability:",
+              "options": [
+                "Use 'fast'",
+                "Quantify thresholds",
+                "Add icons",
+                "Write poems"
+              ],
+              "correct_answer": "B",
+              "explanation": "Numbers enable tests."
+            },
+            {
+              "question": "Security vs performance illustrates:",
+              "options": [
+                "No relation",
+                "Potential NFR conflict",
+                "UI issue",
+                "Bug"
+              ],
+              "correct_answer": "B",
+              "explanation": "Tension between qualities."
+            },
+            {
+              "question": "Usability metric example:",
+              "options": [
+                "MTTR < 10 min",
+                "Training time ≤ 2h",
+                "p99 latency 300ms",
+                "Throughput 2k rps"
+              ],
+              "correct_answer": "B",
+              "explanation": "Measures ease of use."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_04_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "FR vs NFR",
+            "behavior analysis"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Behavior analysis often uses:",
+              "options": [
+                "Sequence/state diagrams",
+                "CSS",
+                "SMTP",
+                "JPEG"
+              ],
+              "correct_answer": "A",
+              "explanation": "Models behaviors."
+            },
+            {
+              "question": "'System recommends exercises' is a:",
+              "options": [
+                "NFR",
+                "FR",
+                "Policy",
+                "Branding"
+              ],
+              "correct_answer": "B",
+              "explanation": "It describes behavior."
+            },
+            {
+              "question": "Interfaces belong to:",
+              "options": [
+                "NFRs",
+                "FRs",
+                "Neither",
+                "Budgets"
+              ],
+              "correct_answer": "A",
+              "explanation": "External interfaces are non-functional."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_04_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "Provide one FR and one measurable NFR for a smart door lock (5–7 sentences).",
+        "reference_answer": "FR: Unlock via mobile credential. NFR: p95 unlock ≤ 1s; availability ≥99.95%.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_04_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "Explain how business rules differ from requirements with one example (5–7 sentences).",
+        "reference_answer": "Rules constrain the business; requirements specify system behavior within those rules. Example: age policy → ID check requirement.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_04_application",
+        "task_type": "qa_application",
+        "instruction": "Reconcile 'AES-256 for PII' with 'p99 latency ≤ 300ms' (≤5 sentences).",
+        "reference_answer": "Benchmark crypto, consider acceleration; set thresholds; document decision as testable constraints.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "material_id": "slide_05",
+    "title": "Requirements Elicitation Techniques",
+    "content": "Elicitation: interviews, laddering, brainstorming, observation/ethnography, JAD, scenarios, prototyping, reuse, card sorting, repertory grids; context of use; pitfalls.",
+    "test_cases": [
+      {
+        "test_id": "slide_05_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "Elicitation options: interviews, laddering, brainstorming, observation/ethnography, JAD, scenarios, prototyping, reuse, card sorting, repertory grids; select based on uncertainty and tacitness; avoid pitfalls.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_05_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "Interviews require preparation; laddering probes ‘why’; brainstorming separates generation/consolidation; observation captures tacit work; JAD structures consensus; scenarios/prototypes clarify flows; card sorting informs IA; repertory grids elicit attributes. Choose a mix by context-of-use and communication barriers.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_05_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "technique basics"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Laddering reveals:",
+              "options": [
+                "Costs",
+                "Underlying values via 'why' chains",
+                "Bugs",
+                "Latency"
+              ],
+              "correct_answer": "B",
+              "explanation": "It probes attribute→value links."
+            },
+            {
+              "question": "Observation captures:",
+              "options": [
+                "Tacit practices",
+                "Only surveys",
+                "CI/CD",
+                "DNS"
+              ],
+              "correct_answer": "A",
+              "explanation": "It reveals real work."
+            },
+            {
+              "question": "JAD is:",
+              "options": [
+                "A DB",
+                "A structured workshop",
+                "A firewall",
+                "A KPI"
+              ],
+              "correct_answer": "B",
+              "explanation": "Consensus-oriented session."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_05_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "pitfalls",
+            "context of use"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "A common interview mistake:",
+              "options": [
+                "Open mindset",
+                "Interviewing only one role",
+                "Using checklists",
+                "Recording rationale"
+              ],
+              "correct_answer": "B",
+              "explanation": "Too few voices misses needs."
+            },
+            {
+              "question": "Context of use includes:",
+              "options": [
+                "Only hardware",
+                "Users, tasks, tech, environment",
+                "Only UI",
+                "Only budget"
+              ],
+              "correct_answer": "B",
+              "explanation": "Holistic usage setting."
+            },
+            {
+              "question": "Card sorting helps:",
+              "options": [
+                "Network topology",
+                "Information architecture",
+                "Compiler flags",
+                "Encryption"
+              ],
+              "correct_answer": "B",
+              "explanation": "Group concepts for IA."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_05_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "classification/selection"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Which pairing is correct?",
+              "options": [
+                "Conversational→prototyping",
+                "Observational→ethnography",
+                "Analytic→stand-ups",
+                "Synthetic→unit tests"
+              ],
+              "correct_answer": "B",
+              "explanation": "Ethnography is observational."
+            },
+            {
+              "question": "A good brainstorming split:",
+              "options": [
+                "60/0",
+                "20 generate / 40 consolidate",
+                "0/60",
+                "10/50"
+              ],
+              "correct_answer": "B",
+              "explanation": "Separate ideation and refinement."
+            },
+            {
+              "question": "Repertory grids yield:",
+              "options": [
+                "Entity-attribute matrices",
+                "Sequence diagrams",
+                "Dockerfiles",
+                "User manuals"
+              ],
+              "correct_answer": "A",
+              "explanation": "Matrix for attribute analysis."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_05_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "technique mixing"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "When knowledge is tacit prefer:",
+              "options": [
+                "Interviews only",
+                "Observation",
+                "Unit tests",
+                "CI"
+              ],
+              "correct_answer": "B",
+              "explanation": "Directly observe work."
+            },
+            {
+              "question": "Laddering complements brainstorming by:",
+              "options": [
+                "Replacing it",
+                "Explaining why ideas matter",
+                "Coding faster",
+                "Scaling servers"
+              ],
+              "correct_answer": "B",
+              "explanation": "It probes value behind ideas."
+            },
+            {
+              "question": "Scenarios are best to:",
+              "options": [
+                "Select CPUs",
+                "Describe usage flows",
+                "Tune SQL",
+                "Pick fonts"
+              ],
+              "correct_answer": "B",
+              "explanation": "They map tasks to steps."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_05_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "When would you prefer observation over interviews? Provide 5–7 sentences.",
+        "reference_answer": "When knowledge is tacit, routine, or hard to verbalize; observation reveals context, interruptions, and workarounds that interviews miss.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_05_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "How does laddering complement brainstorming? Provide 5–7 sentences.",
+        "reference_answer": "Brainstorming widens the idea space; laddering digs into ‘why’ specific attributes matter, helping prioritize by underlying values.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_05_application",
+        "task_type": "qa_application",
+        "instruction": "Select a technique mix for eliciting an ER triage app (≤5 sentences).",
+        "reference_answer": "Map stakeholders; observe triage; small-group interviews; laddering for safety values; prototype UI for validation.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "material_id": "slide_06",
+    "title": "Writing Good Requirements (Clarity & Ambiguity)",
+    "content": "Writing good requirements: ambiguity types; measurable NFRs; ISO 29148 templates; shall/should/may; active voice; consistent terminology; generic functional syntax.",
+    "test_cases": [
+      {
+        "test_id": "slide_06_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "Control ambiguity (lexical, syntactic, semantic, referential, vague); measurable NFRs; ISO 29148 templates; shall/should/may; active voice; consistent terminology.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_06_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "Rewrite ambiguous phrases with quantifiers and precise nouns; use structured NL and templates (ISO 29148); quantify qualities; prefer active voice and consistent terms; supplement with models where useful.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_06_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "ambiguity types",
+            "modal verbs"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "'Up to 12' shows:",
+              "options": [
+                "Lexical ambiguity",
+                "Referential",
+                "Semantic",
+                "Syntactic"
+              ],
+              "correct_answer": "A",
+              "explanation": "Word meaning unclear."
+            },
+            {
+              "question": "Binding keyword is:",
+              "options": [
+                "Should",
+                "May",
+                "Shall",
+                "Might"
+              ],
+              "correct_answer": "C",
+              "explanation": "'Shall' denotes mandatory requirement."
+            },
+            {
+              "question": "Measurable usability example:",
+              "options": [
+                "Beautiful UI",
+                "Training time ≤ 90 min",
+                "Cool animation",
+                "Trendy color"
+              ],
+              "correct_answer": "B",
+              "explanation": "Quantified measure."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_06_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "rewrites",
+            "structure"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "'A and B or C' ambiguity is:",
+              "options": [
+                "Hardware",
+                "Semantic grouping",
+                "Font",
+                "Budget"
+              ],
+              "correct_answer": "B",
+              "explanation": "Grouping unclear."
+            },
+            {
+              "question": "Reduce referential ambiguity by:",
+              "options": [
+                "Use 'it' often",
+                "Repeat precise nouns",
+                "Add emojis",
+                "Switch fonts"
+              ],
+              "correct_answer": "B",
+              "explanation": "Name the entity."
+            },
+            {
+              "question": "Active voice example:",
+              "options": [
+                "'Will be updated'",
+                "'The system shall update'",
+                "Passive is better",
+                "None"
+              ],
+              "correct_answer": "B",
+              "explanation": "Actor performs action."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_06_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "measurable NFRs",
+            "templates"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Best rewrite of 'loads fast':",
+              "options": [
+                "Loads quickly",
+                "Loads soon",
+                "p95 dashboard < 1.5s",
+                "Nice speed"
+              ],
+              "correct_answer": "C",
+              "explanation": "Quantified and testable."
+            },
+            {
+              "question": "ISO 29148 promotes:",
+              "options": [
+                "Version control",
+                "Structured requirements practices",
+                "Compilers",
+                "Networking"
+              ],
+              "correct_answer": "B",
+              "explanation": "Templates/structure."
+            },
+            {
+              "question": "Supplement NL with models to:",
+              "options": [
+                "Increase ambiguity",
+                "Reduce ambiguity",
+                "Replace reviews",
+                "Avoid tests"
+              ],
+              "correct_answer": "B",
+              "explanation": "Improves comprehension."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_06_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "generic syntax",
+            "terminology"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Generic functional syntax includes:",
+              "options": [
+                "Preconditions, trigger, action, post-conditions",
+                "Cloud regions",
+                "CSS vars",
+                "None"
+              ],
+              "correct_answer": "A",
+              "explanation": "Covers behavior context."
+            },
+            {
+              "question": "Use negative spec sparingly because:",
+              "options": [
+                "Clearer positive phrasing",
+                "Law mandates",
+                "Fonts",
+                "CI"
+              ],
+              "correct_answer": "A",
+              "explanation": "Positive phrasing is clearer."
+            },
+            {
+              "question": "Consistency means:",
+              "options": [
+                "Different terms",
+                "Glossary-aligned terms",
+                "Random synonyms",
+                "Emoji use"
+              ],
+              "correct_answer": "B",
+              "explanation": "Use defined terms."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_06_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "Rewrite two ambiguous backlog items into measurable statements (5–7 sentences).",
+        "reference_answer": "Replace 'easy' and 'soon' with metrics/time bounds and explicit nouns; quantify latencies.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_06_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "Explain why active voice improves testability (5–7 sentences).",
+        "reference_answer": "Active voice clarifies actor and action, enabling testable preconditions and post-conditions.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_06_application",
+        "task_type": "qa_application",
+        "instruction": "Provide a measurable NFR set for a search page (≤5 sentences).",
+        "reference_answer": "p95 < 500 ms; 0.1% error @ 100 RPS; relevance@10 ≥ 0.7; WCAG AA.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "material_id": "slide_07",
+    "title": "Analysis, Negotiation & Prioritization",
+    "content": "Analysis/negotiation/prioritization: checklists, interaction matrix; strategies; MoSCoW; value–cost–risk (Wiegers); AHP; challenges.",
+    "test_cases": [
+      {
+        "test_id": "slide_07_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "Analysis checks necessity/feasibility/consistency; interaction matrix; negotiation; prioritization: MoSCoW, Wiegers, AHP.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_07_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "Checklists find overspecification and ambiguity; the interaction matrix exposes conflicts/overlaps. Negotiation interleaves with elicitation. MoSCoW for speed, Wiegers for value–cost–risk, AHP for pairwise rigor and CR check.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_07_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "negotiation",
+            "MoSCoW"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "A negotiation technique is:",
+              "options": [
+                "Voting",
+                "Hashing",
+                "Caching",
+                "Inlining"
+              ],
+              "correct_answer": "A",
+              "explanation": "Voting resolves disagreement."
+            },
+            {
+              "question": "MoSCoW 'W' means:",
+              "options": [
+                "Will",
+                "Won’t (this time)",
+                "Why",
+                "Workflow"
+              ],
+              "correct_answer": "B",
+              "explanation": "Defer for now."
+            },
+            {
+              "question": "Checklists help detect:",
+              "options": [
+                "Ambiguity and unnecessary requirements",
+                "GPU settings",
+                "Fonts",
+                "CSS"
+              ],
+              "correct_answer": "A",
+              "explanation": "Quality issues in requirements."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_07_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "Wiegers",
+            "AHP"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Wiegers balances:",
+              "options": [
+                "Style vs. beauty",
+                "Value/penalty vs. cost/risk",
+                "CPU vs. GPU",
+                "UX vs. UI"
+              ],
+              "correct_answer": "B",
+              "explanation": "Priority ∝ value ÷ (cost+risk)."
+            },
+            {
+              "question": "AHP requires:",
+              "options": [
+                "Pairwise comparisons and consistency ratio",
+                "GPU clusters",
+                "Docker",
+                "Only means"
+              ],
+              "correct_answer": "A",
+              "explanation": "CR ≤ 0.1 acceptable."
+            },
+            {
+              "question": "Interaction matrix cell 1000 denotes:",
+              "options": [
+                "Conflict",
+                "Overlap",
+                "Independence",
+                "Unknown"
+              ],
+              "correct_answer": "B",
+              "explanation": "Represents overlap."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_07_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "what to prioritize"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "We prioritize:",
+              "options": [
+                "Non-negotiable constraints",
+                "Negotiable features",
+                "Test cases",
+                "Personas"
+              ],
+              "correct_answer": "B",
+              "explanation": "Constraints are fixed."
+            },
+            {
+              "question": "Key challenge:",
+              "options": [
+                "Everyone agrees",
+                "Different weights/effort",
+                "No data",
+                "Trivial"
+              ],
+              "correct_answer": "B",
+              "explanation": "Stakeholder differences + overhead."
+            },
+            {
+              "question": "Penalty represents:",
+              "options": [
+                "Cost to implement",
+                "Downside if absent",
+                "Tech risk",
+                "UI polish"
+              ],
+              "correct_answer": "B",
+              "explanation": "Value loss if missing."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_07_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "process timing",
+            "consistency"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Negotiation occurs:",
+              "options": [
+                "Only at end",
+                "Interleaved with elicitation/analysis",
+                "Post-release only",
+                "Never"
+              ],
+              "correct_answer": "B",
+              "explanation": "Iterative."
+            },
+            {
+              "question": "Consistency ratio ≤ 0.10 in AHP is:",
+              "options": [
+                "Acceptable",
+                "Always wrong",
+                "Too high",
+                "Irrelevant"
+              ],
+              "correct_answer": "A",
+              "explanation": "Indicates acceptable consistency."
+            },
+            {
+              "question": "Necessity checking avoids:",
+              "options": [
+                "Gold plating",
+                "All risk",
+                "Any docs",
+                "Meetings"
+              ],
+              "correct_answer": "A",
+              "explanation": "Stops overspecification."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_07_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "Explain when MoSCoW is preferable over AHP (5–7 sentences).",
+        "reference_answer": "Use MoSCoW early for speed and low overhead; AHP later for rigor and traceable trade-offs.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_07_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "What extra insight does the interaction matrix provide before prioritization? (5–7 sentences).",
+        "reference_answer": "Reveals conflicts/overlaps so priorities respect dependencies and redundancies.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_07_application",
+        "task_type": "qa_application",
+        "instruction": "Pick 3 of 8 features using a mini Wiegers worksheet (≤5 sentences).",
+        "reference_answer": "Score benefit/penalty; estimate cost/risk; compute priority and sort; select top 3.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "material_id": "slide_08",
+    "title": "Specification & Validation",
+    "content": "Specification & validation: SRS (ISO 29148, Wiegers template); attributes (id, rationale, status); reviews with checklists; prototyping; distributed review tactics.",
+    "test_cases": [
+      {
+        "test_id": "slide_08_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "SRS templates (ISO 29148); attributes (id, rationale, status); validation via reviews with checklists and prototyping; distributed tactics.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_08_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "SRS organizes FRs/NFRs; attributes capture id, version, priority, status, rationale. Reviews run plan→prepare→meeting→follow-up; checklists for clarity/completeness/consistency/standards/traceability. Prototyping and test derivation validate flows; subteams and async tools scale reviews.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_08_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "SRS/attributes",
+            "reviews"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Standard for SRS outline:",
+              "options": [
+                "ISO/IEC/IEEE 29148",
+                "ISO 27001",
+                "IEEE 754",
+                "RFC 2616"
+              ],
+              "correct_answer": "A",
+              "explanation": "29148 defines SRS structure."
+            },
+            {
+              "question": "Attribute explaining 'why':",
+              "options": [
+                "Status",
+                "Rationale",
+                "Icon",
+                "Color"
+              ],
+              "correct_answer": "B",
+              "explanation": "Captures decision reason."
+            },
+            {
+              "question": "A review step is:",
+              "options": [
+                "Ignore feedback",
+                "Follow-up actions",
+                "Deploy",
+                "Refactor"
+              ],
+              "correct_answer": "B",
+              "explanation": "Ensure corrections occur."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_08_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "prototyping",
+            "distributed review"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Prototyping helps to:",
+              "options": [
+                "Replace users",
+                "Reveal errors/omissions early",
+                "Eliminate testing",
+                "Avoid SRS"
+              ],
+              "correct_answer": "B",
+              "explanation": "Probe uncertainties."
+            },
+            {
+              "question": "Large artifacts reviewed best by:",
+              "options": [
+                "One huge team",
+                "Parallel small teams",
+                "Author only",
+                "Bots only"
+              ],
+              "correct_answer": "B",
+              "explanation": "Divide and conquer."
+            },
+            {
+              "question": "Distributed teams should use:",
+              "options": [
+                "Paper memos",
+                "Shared docs & async prep",
+                "Silence",
+                "Only meetings"
+              ],
+              "correct_answer": "B",
+              "explanation": "Tool-supported reviews."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_08_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "checklists",
+            "validation focus"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Checklists cover:",
+              "options": [
+                "Comprehensibility and standards",
+                "GPU flags",
+                "Cloud billing",
+                "Branding"
+              ],
+              "correct_answer": "A",
+              "explanation": "Quality dimensions."
+            },
+            {
+              "question": "Validation addresses:",
+              "options": [
+                "Quality of requirements",
+                "Only unit tests",
+                "CDNs",
+                "Budgets"
+              ],
+              "correct_answer": "A",
+              "explanation": "Assess req quality."
+            },
+            {
+              "question": "User-manual drafting helps:",
+              "options": [
+                "Expose ambiguous flows",
+                "Tune SQL",
+                "Choose cloud",
+                "Pick fonts"
+              ],
+              "correct_answer": "A",
+              "explanation": "Exercises scenarios."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_08_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "attributes/trace"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Unique labels mainly support:",
+              "options": [
+                "Traceability",
+                "Fonts",
+                "Wi-Fi",
+                "Branding"
+              ],
+              "correct_answer": "A",
+              "explanation": "Stable references."
+            },
+            {
+              "question": "Status tracking indicates:",
+              "options": [
+                "Progress stage",
+                "Color choice",
+                "CPU clock",
+                "IDE"
+              ],
+              "correct_answer": "A",
+              "explanation": "Lifecycle state."
+            },
+            {
+              "question": "Paper prototypes are appropriate when:",
+              "options": [
+                "Behavior unclear; need fast exploration",
+                "Performance tuning",
+                "Legal review only",
+                "Never"
+              ],
+              "correct_answer": "A",
+              "explanation": "Cheap early learning."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_08_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "Why is rationale a high-value attribute in long-lived systems? (5–7 sentences)",
+        "reference_answer": "It preserves decision context, shortens future reviews, aids maintenance and compliance, and explains trade-offs.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_08_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "List two checklist categories that reduce ambiguity and explain how (5–7 sentences).",
+        "reference_answer": "Clarity/consistency and standards/terminology checks catch vague terms and mismatches.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_08_application",
+        "task_type": "qa_application",
+        "instruction": "Design a lightweight validation plan for a new onboarding flow (≤5 sentences).",
+        "reference_answer": "Draft labeled requirements; 5-person checklist review; low-fidelity prototype; capture decisions; update rationale and status.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "material_id": "slide_09",
+    "title": "RE Process Variability & Requirements Management",
+    "content": "RE process variability; RM: change control, versioning, tracing, status tracking; stable vs. volatile requirements; drivers and impact analysis.",
+    "test_cases": [
+      {
+        "test_id": "slide_09_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "RE varies by context; RM includes change control, versioning, tracing, status; stable vs. volatile requirements; impact analysis.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_09_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "No single process fits all. RM: propose/analyze/decide changes and update artifacts. Stable requirements reflect domain essence; volatile ones depend on environment/regulation. Change drivers include defects, priorities, laws; trace links support impact analysis.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_09_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "RM basics",
+            "stability"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "RM stands for:",
+              "options": [
+                "Requirements Management",
+                "Resource Mining",
+                "Risk Mitigation",
+                "Release Mode"
+              ],
+              "correct_answer": "A",
+              "explanation": "Discipline for handling requirements."
+            },
+            {
+              "question": "Stable requirements are usually:",
+              "options": [
+                "Domain essence",
+                "UI theme",
+                "Vendor name",
+                "Team size"
+              ],
+              "correct_answer": "A",
+              "explanation": "Slower-changing truths."
+            },
+            {
+              "question": "Impact analysis helps to:",
+              "options": [
+                "Decorate slides",
+                "Estimate affected items and cost",
+                "Choose IDE",
+                "Pick fonts"
+              ],
+              "correct_answer": "B",
+              "explanation": "Scopes the change."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_09_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "drivers",
+            "activities"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "A regulatory update is:",
+              "options": [
+                "Internal bug",
+                "External change driver",
+                "UI refactor",
+                "Tooling update"
+              ],
+              "correct_answer": "B",
+              "explanation": "External driver."
+            },
+            {
+              "question": "RM includes:",
+              "options": [
+                "Change control and status tracking",
+                "Cloud billing",
+                "Recruiting",
+                "Marketing"
+              ],
+              "correct_answer": "A",
+              "explanation": "Core RM activities."
+            },
+            {
+              "question": "Version control in RM identifies:",
+              "options": [
+                "Doc and requirement versions",
+                "Only code hashes",
+                "Test flakiness",
+                "Sprint names"
+              ],
+              "correct_answer": "A",
+              "explanation": "Versioning beyond code."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_09_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "variability",
+            "traceability"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Process variability factors include:",
+              "options": [
+                "Technical maturity and paradigm",
+                "Font size",
+                "Monitor size",
+                "None"
+              ],
+              "correct_answer": "A",
+              "explanation": "Contextual factors."
+            },
+            {
+              "question": "Volatile requirements often tie to:",
+              "options": [
+                "Physics",
+                "Specific environment or regulation",
+                "Math",
+                "Compilers"
+              ],
+              "correct_answer": "B",
+              "explanation": "Context-sensitive."
+            },
+            {
+              "question": "Traceability supports impact analysis by:",
+              "options": [
+                "Hiding links",
+                "Documenting dependencies",
+                "Replacing estimation",
+                "Avoiding changes"
+              ],
+              "correct_answer": "B",
+              "explanation": "Follow the links."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_09_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "change flow",
+            "acceptance"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "First step after a change request:",
+              "options": [
+                "Immediate coding",
+                "Validity check/problem analysis",
+                "Deployment",
+                "Procurement"
+              ],
+              "correct_answer": "B",
+              "explanation": "Check request validity."
+            },
+            {
+              "question": "Accept change if:",
+              "options": [
+                "Effort acceptable vs. value",
+                "Team mood",
+                "Randomness",
+                "Tool vendor asks"
+              ],
+              "correct_answer": "A",
+              "explanation": "Cost–benefit acceptable."
+            },
+            {
+              "question": "RM integrity means:",
+              "options": [
+                "Accurate, consistent requirements under change",
+                "Perfect uptime",
+                "No meetings",
+                "No reviews"
+              ],
+              "correct_answer": "A",
+              "explanation": "Consistency maintained."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_09_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "Why separate stable vs. volatile requirements for planning? (5–7 sentences)",
+        "reference_answer": "Stabilize core and design variability for volatile areas (configuration/flags) to reduce churn.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_09_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "Name two artifacts to update after approving a change and why (5–7 sentences).",
+        "reference_answer": "Update spec version and linked design/test cases to keep consistency and auditability.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_09_application",
+        "task_type": "qa_application",
+        "instruction": "Outline a 3-step impact analysis for adding SSO (≤5 sentences).",
+        "reference_answer": "Identify affected requirements and interfaces; estimate effort; decide acceptability; update artifacts/status.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "material_id": "slide_10",
+    "title": "Traceability & RE Research Trends",
+    "content": "Traceability: forward/backward, pre/post; identifiers/attributes; matrices; tools (e.g., DOORS); regulatory standards; policies; benefits and challenges.",
+    "test_cases": [
+      {
+        "test_id": "slide_10_summary_short",
+        "task_type": "summarization",
+        "instruction": "Write a concise 100-word summary that captures the slide’s main ideas.",
+        "reference_answer": "Traceability across artifacts with forward/backward links; identifiers/attributes and matrices/tools; safety standards mandate links; policies define what/when/who/how.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "90–110 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_10_summary_detailed",
+        "task_type": "summarization",
+        "instruction": "Write a detailed 200-word summary linking concepts and their implications.",
+        "reference_answer": "Traceability spans pre-/post-requirements links among goals, requirements, design, code, tests, and docs. Use stable identifiers and rationale; matrices and tools (e.g., DOORS) support scaling. Standards like DO-178C/ISO 26262/IEC 62304 require trace; policies define scope, roles, cadence; challenges include heterogeneity and scale.",
+        "evaluation_criteria": {
+          "coverage_checklist": {
+            "measure": "Presence of required points",
+            "target": "All required bullets present (>=4 key points)"
+          },
+          "factual_accuracy": {
+            "measure": "Contradiction scan vs. slide synopsis",
+            "target": "0 contradictions; 0 invented entities"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          },
+          "length_control": {
+            "measure": "Word count",
+            "target": "180–220 words"
+          }
+        }
+      },
+      {
+        "test_id": "slide_10_quiz_easy_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "trace basics",
+            "tools/standards"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Forward-from links connect:",
+              "options": [
+                "Req→design/code/tests",
+                "Code→compiler",
+                "UI→colors",
+                "Budget→ROI"
+              ],
+              "correct_answer": "A",
+              "explanation": "Downstream realization."
+            },
+            {
+              "question": "A traceability tool:",
+              "options": [
+                "DOORS",
+                "Photoshop",
+                "Terraform",
+                "Blender"
+              ],
+              "correct_answer": "A",
+              "explanation": "Requirements tool."
+            },
+            {
+              "question": "Sectors mandating traceability:",
+              "options": [
+                "Aerospace/Automotive/Medical",
+                "Blogging",
+                "Real estate",
+                "Gaming only"
+              ],
+              "correct_answer": "A",
+              "explanation": "Safety-critical domains."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_10_quiz_easy_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 EASY multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "easy",
+          "topics": [
+            "policies/benefits"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "A policy’s 'who' defines:",
+              "options": [
+                "Roles for trace tasks",
+                "Budget caps",
+                "Color palette",
+                "Flags"
+              ],
+              "correct_answer": "A",
+              "explanation": "Ownership rules."
+            },
+            {
+              "question": "A key benefit is:",
+              "options": [
+                "Change impact analysis/compliance",
+                "Faster GPUs",
+                "UI polish",
+                "Less testing"
+              ],
+              "correct_answer": "A",
+              "explanation": "Supports change and audits."
+            },
+            {
+              "question": "Backward-to links verify:",
+              "options": [
+                "Every element justified by a requirement",
+                "Only UI themes",
+                "Cloud region",
+                "Fonts"
+              ],
+              "correct_answer": "A",
+              "explanation": "Ensures coverage and justification."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_10_quiz_medium_1",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "pre/post",
+            "attributes"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Pre-requirements traceability concerns:",
+              "options": [
+                "Origins of requirements",
+                "Code gen",
+                "Cloud billing",
+                "Drivers"
+              ],
+              "correct_answer": "A",
+              "explanation": "Source goals/stakeholders."
+            },
+            {
+              "question": "Post-requirements traceability concerns:",
+              "options": [
+                "Realization in artifacts",
+                "Hiring",
+                "CI pricing",
+                "Contracts"
+              ],
+              "correct_answer": "A",
+              "explanation": "Design/code/tests mapping."
+            },
+            {
+              "question": "Attributes aiding trace include:",
+              "options": [
+                "Rationale and status",
+                "Hex color",
+                "Slogan",
+                "Lunch"
+              ],
+              "correct_answer": "A",
+              "explanation": "Context for links."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_10_quiz_medium_2",
+        "task_type": "quiz_generation",
+        "instruction": "Generate 3 MEDIUM multiple-choice questions (4 options A–D) on the specified topics. Provide an Answer Key and 1-sentence explanation per item.",
+        "constraints": {
+          "num_questions": 3,
+          "options_per_question": 4,
+          "difficulty": "medium",
+          "topics": [
+            "policy scope",
+            "challenges"
+          ],
+          "format": "Q1..Q3 with options A–D; then Answer Key with explanations."
+        },
+        "reference_answer": {
+          "sample": [
+            {
+              "question": "Policies should define:",
+              "options": [
+                "What/when/who/how",
+                "Only budget",
+                "Only vendor",
+                "Only format"
+              ],
+              "correct_answer": "A",
+              "explanation": "Comprehensive guidance."
+            },
+            {
+              "question": "A major challenge is:",
+              "options": [
+                "Artifact heterogeneity/scale",
+                "Too many budgets",
+                "Overabundant GPUs",
+                "None"
+              ],
+              "correct_answer": "A",
+              "explanation": "Maintaining links is costly."
+            },
+            {
+              "question": "Backward-from helps ensure:",
+              "options": [
+                "Tests map to originating requirements",
+                "Only code compiles",
+                "UX polish",
+                "Sales"
+              ],
+              "correct_answer": "A",
+              "explanation": "Coverage from tests to reqs."
+            }
+          ]
+        },
+        "evaluation_criteria": {
+          "question_clarity": {
+            "measure": "Grammar check + readability score",
+            "target": "No errors; Flesch > 60"
+          },
+          "option_balance": {
+            "measure": "Option length variance per item",
+            "target": "Std. dev. of token count ≤ 20% of mean"
+          },
+          "distractor_plausibility": {
+            "measure": "Semantic relation to stem",
+            "target": "At least 2 plausible distractors per item"
+          },
+          "answer_key_validity": {
+            "measure": "Key presence and range",
+            "target": "Each item has one key in {A,B,C,D}"
+          },
+          "explanation_quality": {
+            "measure": "Length + relevance",
+            "target": "10–30 words; references the tested concept"
+          },
+          "originality": {
+            "measure": "Verbatim overlap with slide synopsis",
+            "target": "No 8+ consecutive words copied"
+          },
+          "formatting": {
+            "measure": "Output structure",
+            "target": "Q1..Qn with A–D; separate Answer Key"
+          }
+        }
+      },
+      {
+        "test_id": "slide_10_concept_qa_1",
+        "task_type": "qa_conceptual",
+        "instruction": "How do identifiers and rationale improve trace reviews? (5–7 sentences)",
+        "reference_answer": "Identifiers provide stable handles; rationale explains intent, speeding consistency checks and change analysis.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_10_concept_qa_2",
+        "task_type": "qa_conceptual",
+        "instruction": "Why do safety standards require bidirectional links? (5–7 sentences)",
+        "reference_answer": "To prove each requirement is implemented and verified, and each element is justified by a requirement.",
+        "evaluation_criteria": {
+          "concept_correctness": {
+            "measure": "Fact check vs. slide synopsis",
+            "target": "0 contradictions; terms used correctly"
+          },
+          "depth": {
+            "measure": "Concrete supporting details/examples",
+            "target": ">= 2 concrete details/examples"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "5–7 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      },
+      {
+        "test_id": "slide_10_application",
+        "task_type": "qa_application",
+        "instruction": "Sketch a minimal traceability plan for a Class II medical app (≤5 sentences).",
+        "reference_answer": "Define ID/attribute schema; maintain req↔design↔test links; capture risk controls; assign roles; audit quarterly.",
+        "evaluation_criteria": {
+          "applicability": {
+            "measure": "Action-step count",
+            "target": ">= 2 concrete steps tied to slide concepts"
+          },
+          "feasibility": {
+            "measure": "Practicality check",
+            "target": "All steps executable within one iteration"
+          },
+          "length_control": {
+            "measure": "Sentence count",
+            "target": "≤ 5 sentences"
+          },
+          "readability": {
+            "measure": "Grammar + Flesch Reading Ease",
+            "target": "No grammatical errors; Flesch > 60"
+          }
+        }
+      }
+    ]
+  }
+]
