@@ -110,7 +110,7 @@ def rag_generate_quiz(pdf_path, pdf_content, difficulty):
     """
     
     response = openai.ChatCompletion.create(
-        model="gpt-4",
+        model="gpt-4o",
         messages=[{"role": "system", "content": prompt}]
     )
     return response['choices'][0]['message']['content']
